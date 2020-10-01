@@ -4,7 +4,7 @@
 #define PIN_SCK              11
 #define PIN_MOSI             10
 #define PIN_LATCH            5
-#define PIN_Blank            26
+#define PIN_BLANK            26
 #define LED_CNT              8
 
 int main()
@@ -14,8 +14,8 @@ int main()
 
     // Init for TLC5947
     Adafruit_TLC5947 tlc(NUM_TLC5974, PIN_SCK, PIN_MOSI, PIN_LATCH);
-	pinMode(PIN_Blank, OUTPUT);
-    digitalWrite(PIN_Blank, LOW);
+	pinMode(PIN_BLANK, OUTPUT);
+    digitalWrite(PIN_BLANK, LOW);
     tlc.begin();
 
     while(true)
