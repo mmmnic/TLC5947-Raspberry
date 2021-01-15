@@ -1,11 +1,11 @@
 #include "Adafruit_TLC5947.h"
 
 #define NUM_TLC5974 	     1
+#define LED_CNT              8
 #define PIN_SCK              11
 #define PIN_MOSI             10
 #define PIN_LATCH            5
 #define PIN_BLANK            26
-#define LED_CNT              8
 
 int main()
 {
